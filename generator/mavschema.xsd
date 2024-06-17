@@ -331,7 +331,7 @@
     </xs:complexType>
 </xs:element>
 
-<xs:element name="mavlink">
+<xs:element name="stmbootloader">
     <xs:complexType>
         <xs:sequence>
             <xs:element ref="include" minOccurs="0" maxOccurs="unbounded"/>
