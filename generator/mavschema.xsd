@@ -331,6 +331,19 @@
     </xs:complexType>
 </xs:element>
 
+<xs:element name="mavlink">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="include" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="version" minOccurs="0"/>
+            <xs:element ref="dialect" minOccurs="0"/>
+            <xs:element ref="enums" minOccurs="0"/>
+            <xs:element ref="messages"/>
+        </xs:sequence>
+        <xs:attribute name="file" type="xs:anyURI"/>
+    </xs:complexType>
+</xs:element>
+
 <xs:element name="stmbootloader">
     <xs:complexType>
         <xs:sequence>
