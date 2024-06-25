@@ -40,6 +40,7 @@ def generate_version_h(directory, xml):
 def generate_mavlink_h(directory, xml):
     '''generate mavlink.h'''
     f = open(os.path.join(directory, "mavlink.h"), mode='w')
+    print(f"YK*****************generate_mavlink_h {directory}")
     t.write(f,'''
 /** @file
  *  @brief MAVLink comm protocol built from ${basename}.xml
